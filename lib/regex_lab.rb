@@ -12,7 +12,7 @@ end
 def words_starting_with_un_and_ending_with_ing(text)
 
   text.scan(/un\w+ing/)
-  
+
 end
 
 
@@ -26,7 +26,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   first_letter = text.scan(/\w+/)[0]
   if (text.scan(/\./)) && (first_letter == first_letter.upcase)
     true
-  else  
+  else
     false
   end
 end
@@ -34,7 +34,7 @@ end
 def first_word_capitalized_and_ends_with_punctuation_2?(text)
   if text.match(/^[A-Z]/) && text.match(/[\.]$/)
     true
-  else 
+  else
     false
   end
 end
